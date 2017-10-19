@@ -4,7 +4,7 @@
 <head >
     <title>Mashup App!</title>
 
-    <p align="center" style="align-self: center; font-style: normal; font-family: 'Times New Roman'; text-decoration: double; font-size: xx-large"> GET DIRECTIONS AND WEATHER</p>
+    <p align="center" style="color: darkblue; align-self: center; font-style: oblique; font-family: 'Algerian','Kristen ITC'; text-decoration: double; font-size: xx-large"> EN ROUTE WEATHER </p>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrgvQt1rD58O3lE4YqrtcKBW7WhDOBTlk&libraries=places&v=3.exp"></script>
 
@@ -13,10 +13,10 @@
 <div ng-view align="center">
     <div   class="left" align="center">
 
-        <p> <b>Enter the Source: </b> <input type="text" ng-model = "Source" id ="Source" class="input">
-            <b>Enter the Destination: </b><input type="text" ng-model = "Destination" id = "Destination" class="input">
+        <p> <b>SOURCE: </b> <input type="text" placeholder="Enter Source City" ng-model = "Source" id ="Source" class="input">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>DESTINATION: </b><input type="text" placeholder="Enter Destination City" ng-model = "Destination" id = "Destination" class="input">
             <br><br>
-            <input type= "button" style="background-color: #555555; text-emphasis-color: white" value ="Distance" ng-click="getDirection()">
+            <input type= "button" style="background-color:darkturquoise ;text-decoration: double; text-emphasis-color: black ;font-weight: bold" value ="EN ROUTE" ng-click="getDirection()">
             <br></div>
     <br>
     <div id = "Map-Canvas" style="width:800px;height:600px; align-content: center;" align="center">
